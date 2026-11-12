@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Quiz!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="food-confetti" aria-hidden="true">
+    <span>🍓</span>
+    <span>🍋</span>
+    <span>🥑</span>
+    <span>🍒</span>
+    <span>🥐</span>
+    <span>🫐</span>
+  </div>
+
+  <main class="quiz-card">
+    <header class="quiz-header">
+      <div class="logo-badge" aria-hidden="true">🍜</div>
+      <div>
+        <p class="eyebrow">A tasty little challenge</p>
+        <h1>Foodie Quiz!</h1>
+      </div>
+    </header>
+
+    <section id="welcome-screen" class="screen">
+      <div class="hero-plate" aria-hidden="true">
+        <span class="plate-food">🍣</span>
+        <span class="plate-food">🍕</span>
+        <span class="plate-food">🧁</span>
+      </div>
+      <h2>Ready to test your food knowledge?</h2>
+      <p>Answer a few delicious questions and see how much of a foodie you are!</p>
+      <button id="start-button" class="button primary-button" type="button">
+        Start Quiz <span aria-hidden="true">→</span>
+      </button>
+    </section>
+
+    <section id="quiz-screen" class="screen hidden" aria-live="polite">
+      <div class="progress-row">
+        <p id="question-number">Question 1 of 1</p>
+        <p id="score-display">Score: 0</p>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <h2 id="question-text">Question goes here</h2>
+      <div id="answer-buttons" class="answer-grid"></div>
+      <p id="feedback" class="feedback" role="status"></p>
+
+      <button id="next-button" class="button next-button hidden" type="button">
+        Next Question <span aria-hidden="true">→</span>
+      </button>
+    </section>
+
+    <section id="result-screen" class="screen hidden" aria-live="polite">
+      <div class="result-emoji" aria-hidden="true">🏆</div>
+      <p class="eyebrow">Quiz complete!</p>
+      <h2 id="result-title">Delicious work!</h2>
+      <p id="final-score" class="final-score">You scored 0 out of 1.</p>
+      <p id="result-message">Thanks for playing!</p>
+      <button id="restart-button" class="button primary-button" type="button">
+        Restart Quiz <span aria-hidden="true">↻</span>
+      </button>
+    </section>
+  </main>
+
+  <p class="page-note">Made with a sprinkle of curiosity ✨</p>
+  <script src="script.js"></script>
+</body>
+</html>
+
